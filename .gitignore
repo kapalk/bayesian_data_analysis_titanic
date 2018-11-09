@@ -1,0 +1,4 @@
+code/.ipynb_checkpoints/
+
+# ignore cached stan models
+*.pkl
