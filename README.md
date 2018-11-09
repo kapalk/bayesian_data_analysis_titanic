@@ -22,4 +22,16 @@ Extend the block ((* block packages *))
 \usepackage[parfill]{parskip}
 \usepackage{float}
 \usepackage{listings}
+
+\makeatletter
+\lstdefinestyle{mystyle}{
+  basicstyle=%
+    \ttfamily
+    \color{blue}%
+    \lst@ifdisplaystyle\scriptsize\fi
+}
+\makeatother
+
+\lstset{style=mystyle}
+
 ```
