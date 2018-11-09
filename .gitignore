@@ -1,0 +1,6 @@
+__pycache__/
+code/.ipynb_checkpoints/
+
+# ignore cached stan models
+*.pkl
+*.pdf
