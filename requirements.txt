@@ -3,3 +3,4 @@ pystan
 pandas
 scikit-learn-0.20.0
 matplotlib
+tqdm
