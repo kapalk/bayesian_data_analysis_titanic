@@ -1,6 +1,7 @@
-jupyter
-pystan
-pandas
-scikit-learn-0.20.0
-matplotlib
-tqdm
+ipykernel==4.10.0
+jupyter==1.0.0
+matplotlib==2.2.3
+pandas==0.23.4
+pystan==2.18.0.0
+scikit-learn==0.20.0
+tqdm==4.28.1
