@@ -25,6 +25,14 @@ model {
 }
 generated quantities {
     vector[n] log_lik;
+    real p_hat_ppc = 0;
+
+    for (j in 1:n) {
+        int y_ppc = bernoulli_logit_rng(eta[j]);
+        p_hat_ppc = p_hat_ppc + y_ppc;
+    }
+    p_hat_ppc = p_hat_ppc / n;
+        
     for (i in 1:n)
         log_lik[i] = bernoulli_logit_lpmf(y[i] | eta[i]);
 }
