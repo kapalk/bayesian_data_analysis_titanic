@@ -7,3 +7,5 @@ code/.ipynb_checkpoints/
 *.pyc
 venv/*
 *.tex
+presentation/*
+*.eps
