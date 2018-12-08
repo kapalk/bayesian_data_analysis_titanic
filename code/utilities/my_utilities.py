@@ -11,7 +11,7 @@ def create_tex_table(df, dest, decimals=2, index=True):
     with open(dest, 'w') as f:
         f.write(df.round(decimals).to_latex(index=index))
 
-def create_fit_table(fit, dest, filter=[], decimals=2):
+def create_fit_table(fit, dest=None, filter=[], decimals=2):
     """
     Create a publication ready latex table of StanFit4model
 
@@ -24,8 +24,8 @@ def create_fit_table(fit, dest, filter=[], decimals=2):
 
     Params:
         fit (StanFit4model)    
-        dest (str)                name of the file to save the table
-        filter (list[str]):       names of the keys to include.
+        dest (str)                Name of the file to save the table. None for not to save
+        filter (list[str]):       Names of the keys to include.
         
     Returns:
         pd.DataFrame
@@ -38,7 +38,8 @@ def create_fit_table(fit, dest, filter=[], decimals=2):
     if filter:
         df = df.loc[filter]
         
-    create_tex_table(df, dest, decimals)
+    if dest is not None:
+        create_tex_table(df, dest, decimals)
         
     return df.round(decimals)
 
