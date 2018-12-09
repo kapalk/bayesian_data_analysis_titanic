@@ -31,7 +31,7 @@ The notebook runs with python 2.7 and 3.6.
 
 The data is found from the equally named folder and all the source code is included in the code directory. 'Bayesian Data Analysis - Course project.pdf' contains a report summarizing the results of the study.
 
-## Creating pdf
+# Creating pdf
 
 Create the pdf using better-template.tplx. All credits to Markus Beuckelmann.
 source: http://markus-beuckelmann.de/blog/customizing-nbconvert-pdf.html
