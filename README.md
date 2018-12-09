@@ -9,7 +9,7 @@ We approached the problem by constructing a logistic regression likelihood model
 We were able train a classifier to predict survivors with 0.74 F1 score and found validation for the argument that being young, female and having higher class ticket improved individual's chances to survive. The model predictions are not perfectly accurate which was expected, as the survival included an substantially random element.
 
 
-![The posterior distribution for regression coefficients](code/figs/betas.png | width=100)
+![The posterior distribution for regression coefficients](https://github.com/kapalk/bayesian_data_analysis_titanic/blob/master/code/figs/betas.png | width=100)
 
 # Run
 
