@@ -9,3 +9,8 @@ venv/*
 *.tex
 presentation/*
 *.eps
+*.aux
+*.log
+*.out
+*.synctex.gz
+
