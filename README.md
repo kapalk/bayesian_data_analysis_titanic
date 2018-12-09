@@ -45,7 +45,7 @@ Find the location of site-packages
  
  `python -m site`
 
-### Modify the _site-packages_/nbconvert/templates/latex/base.tplx
+## Modify the _site-packages_/nbconvert/templates/latex/base.tplx
 
 Extend the block ((* block packages *))
 ```
