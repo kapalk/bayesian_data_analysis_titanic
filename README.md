@@ -6,7 +6,10 @@ The sinking of the RMS Titanic On April 15, 1912 is a widely known tragedy that 
 
 We approached the problem by constructing a logistic regression likelihood model on the chosen explanatory variables. We modelled the posterior distributions for the variables as pooled, as we reasoned that all individuals follow the same distribution for e.g. age altering the survival probability. Our prior selection was weakly informative Student-t distribution, as we chose to let the data speak for itself. 
 
-We were able train a classifier to predict survivols with 0.74 F1 score and found validation for the argument that being young, female and having higher class ticket improved individual's chances to survive. The model predictions are not perfectly accurate which was expected, as the survival included an substantially random element.
+We were able train a classifier to predict survivors with 0.74 F1 score and found validation for the argument that being young, female and having higher class ticket improved individual's chances to survive. The model predictions are not perfectly accurate which was expected, as the survival included an substantially random element.
+
+
+![The posterior distribution for regression coefficients](code/figs/betas.png)
 
 # Run
 
